@@ -1,0 +1,34 @@
+ext{
+
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            applicationId    : "jmlzz.example.baseframe",
+            minSdkVersion    : 15,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    dependVersion=[
+            support: "25.3.1",
+    ]
+
+    dependencies = [
+            //android-support
+            "support-v4"          : "com.android.support:support-v4:${dependVersion.support}",
+            "appcompat-v7"        : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "design"              : "com.android.support:design:${dependVersion.support}",
+            "recyclerview"        : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "cardview"            : "com.android.support:cardview-v7:${dependVersion.support}",
+
+            //ui
+            "constraint-layout"   : "com.android.support.constraint:constraint-layout:1.0.2",
+            "utilcode"            : "com.blankj:utilcode:1.9.6"
+    ]
+
+
+
+
+
+}
