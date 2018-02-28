@@ -62,7 +62,13 @@ public class RegisterActivity extends AppCompatActivity {
                 mRegisterPresenter.register(username,password);
                 break;
             case R.id.btn_login:
-
+                String username1 = etAccout.getText().toString().trim();
+                String password1 = etPassword.getText().toString().trim();
+                if (TextUtils.isEmpty(username1) || TextUtils.isEmpty(password1)) {
+                    ToastUtils.showShort("input error");
+                    return;
+                }
+                mRegisterPresenter.login(username1,password1);
                 break;
         }
     }
