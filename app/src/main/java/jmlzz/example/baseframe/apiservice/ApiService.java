@@ -1,6 +1,7 @@
 package jmlzz.example.baseframe.apiservice;
 
 import io.reactivex.Observable;
+import jmlzz.example.baseframe.bean.HomeTopicBean;
 import jmlzz.example.baseframe.bean.RegisterBean;
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -23,5 +24,8 @@ public interface ApiService {
     @POST("login")
     Observable<RegisterBean> login(@Field("username") String username,
                                 @Field("password") String password);
+
+    @GET("home")
+    Observable<HomeTopicBean> homeBanner();
 
 }

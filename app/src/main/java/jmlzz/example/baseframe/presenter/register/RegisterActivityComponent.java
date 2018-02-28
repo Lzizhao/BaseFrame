@@ -1,4 +1,4 @@
-package jmlzz.example.baseframe.presenter;
+package jmlzz.example.baseframe.presenter.register;
 
 import dagger.Component;
 import jmlzz.example.baseframe.ui.activity.RegisterActivity;

@@ -1,4 +1,4 @@
-package jmlzz.example.baseframe.presenter;
+package jmlzz.example.baseframe.presenter.register;
 
 import dagger.Module;
 import dagger.Provides;

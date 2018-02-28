@@ -1,4 +1,4 @@
-package jmlzz.example.baseframe.presenter;
+package jmlzz.example.baseframe.presenter.register;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.SPUtils;
@@ -12,6 +12,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.internal.schedulers.IoScheduler;
 import io.reactivex.schedulers.Schedulers;
 import jmlzz.example.baseframe.apiservice.ApiService;
+import jmlzz.example.baseframe.bean.HomeTopicBean;
 import jmlzz.example.baseframe.bean.RegisterBean;
 import jmlzz.example.baseframe.ui.activity.RegisterActivity;
 import jmlzz.example.baseframe.common.Constant;
@@ -80,6 +81,7 @@ public class RegisterPresenter {
                         SPUtils.getInstance(Constant.SP_MARKET).put(Constant.USERID,registerBean.getUserInfo().getUserid());
                         String string = SPUtils.getInstance(Constant.SP_MARKET).getString(Constant.USERID);
                         LogUtils.d("lzz :",string);
+                        mRegisterActivity.loginSuccess();
                     }
                 }, new Consumer<Throwable>() {
                     @Override
@@ -87,7 +89,6 @@ public class RegisterPresenter {
                         LogUtils.d("lzz", "登陆失败 ");
                     }
                 });
-
       /*  login.enqueue(new Callback<RegisterBean>() {
             @Override
             public void onResponse(Call<RegisterBean> call, Response<RegisterBean> response) {
@@ -107,6 +108,8 @@ public class RegisterPresenter {
             }
         });*/
     }
+
+
 
 
 }

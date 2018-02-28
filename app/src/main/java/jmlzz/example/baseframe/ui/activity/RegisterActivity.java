@@ -1,5 +1,6 @@
 package jmlzz.example.baseframe.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -15,9 +16,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import jmlzz.example.baseframe.R;
-import jmlzz.example.baseframe.presenter.DaggerRegisterActivityComponent;
-import jmlzz.example.baseframe.presenter.RegisterActivityModel;
-import jmlzz.example.baseframe.presenter.RegisterPresenter;
+import jmlzz.example.baseframe.presenter.register.DaggerRegisterActivityComponent;
+import jmlzz.example.baseframe.presenter.register.RegisterActivityModel;
+import jmlzz.example.baseframe.presenter.register.RegisterPresenter;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -73,4 +74,10 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
+
+    public void loginSuccess() {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

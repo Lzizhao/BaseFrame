@@ -40,6 +40,8 @@ dependencies {
 
     implementation rootProject.ext.dependencies["dagger"]
     annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+    implementation rootProject.ext.dependencies["banner"]
+    implementation rootProject.ext.dependencies["glide"]
 
 
 
