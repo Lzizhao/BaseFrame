@@ -21,6 +21,7 @@ ext {
             "design"              : "com.android.support:design:${dependVersion.support}",
             "recyclerview"        : "com.android.support:recyclerview-v7:${dependVersion.support}",
             "cardview"            : "com.android.support:cardview-v7:${dependVersion.support}",
+            "multidex"            : "com.android.support:multidex:1.0.0",
 
             //ui
             "butterknife"         : "com.jakewharton:butterknife:8.8.1",

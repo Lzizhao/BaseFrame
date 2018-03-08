@@ -15,6 +15,7 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 import jmlzz.example.baseframe.R;
 import jmlzz.example.baseframe.presenter.register.DaggerRegisterActivityComponent;
 import jmlzz.example.baseframe.presenter.register.RegisterActivityModel;
@@ -58,7 +59,6 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-//                mRegisterPresenter = new RegisterPresenter(this);
 
                 mRegisterPresenter.register(username,password);
                 break;
