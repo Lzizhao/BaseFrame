@@ -59,6 +59,9 @@ dependencies {
     implementation rootProject.ext.dependencies["banner"]
     implementation rootProject.ext.dependencies["glide"]
     implementation rootProject.ext.dependencies["multidex"]
+    implementation rootProject.ext.dependencies["jsoup"]
+
+
 
 
 }
