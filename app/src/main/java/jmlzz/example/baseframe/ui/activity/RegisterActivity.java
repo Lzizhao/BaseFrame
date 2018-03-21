@@ -58,9 +58,9 @@ public class RegisterActivity extends AppCompatActivity {
                     ToastUtils.showShort("input error");
                     return;
                 }
+//                mRegisterPresenter.register(username,password);
+                mRegisterPresenter.loginAndRegister(username,password);
 
-
-                mRegisterPresenter.register(username,password);
                 break;
             case R.id.btn_login:
                 String username1 = etAccout.getText().toString().trim();

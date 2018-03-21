@@ -49,7 +49,6 @@ public class GetJianShuDataActivity extends AppCompatActivity {
                             sb.append(text+"\n");
                         }
                     }
-
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
